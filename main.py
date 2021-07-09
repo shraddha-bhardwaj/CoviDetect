@@ -18,12 +18,12 @@ if __name__ == "__main__":
     nPositive = 0
     for item in dir_contents:
         if item.endswith('txt'):
-            print(f"Detecting covid status in{item}")
+            print(f"Detecting covid status in {item}")
             flag = isPositive(item)
             if(flag):
-                print(f"covid positive is found in{item}")
+                print(f"covid positive is found in {item}")
                 nPositive += 1
             else:
-                print(f"covid negative is found in{item}")
-    print("*******All covid positive reports are detected*******")
+                print(f"covid negative is found in {item}")
+    print("*******   All covid positive reports are detected   *******")
     print(f"{nPositive} reports found with positive covid status ")
